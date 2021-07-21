@@ -1,0 +1,68 @@
+body{
+    background: rgb(148, 255, 189);
+    text-align: center;
+    /* margin: 10px; */
+}
+fieldset{
+    /* width: auto;
+    height: auto; */
+    
+
+    border: none;
+}
+.section{
+    margin-top: 30px;
+    background: rgb(148, 234, 255);
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50vh;
+    max-width: 80vh;
+    border-radius: 15%;
+    border: solid 10px pink;
+}
+
+form{
+    /* border: 2px solid rgb(255, 0, 0); */
+    min-width: 30vh;
+    max-width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+
+    /*  */
+}
+.nom, .prenom, .email, .email2, .message{
+    margin: 15px;
+    display:block;
+    justify-content:center;
+    
+}
+
+input:invalid{
+    background: rgb(248, 195, 195);
+    /* opacity: 0.8; */
+    color: red;
+}
+
+input:valid{
+    background:rgb(121, 253, 121);
+    opacity:0.4;
+    color:black;
+}
+
+
+#nom, #prenom, #email, #email2, #message{
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+/* #email2.pasEgal{
+    border: 1px solid red;
+} */
+#bienEnvoye{
+    display:none;
+}
+/* #bien_envoye.displayResult{
+    background:green;
+} */

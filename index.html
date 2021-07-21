@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>exo jonathan juillet 2021</title>
+</head>
+<body>
+    <!-- ici la section du formulaire  -->
+    <section class="section">
+        <fieldset class="fieldset">
+            <!-- action a remplir une fois le dossier créé ! -->
+            <form action="index.php" id="formulaire" method="post" onsubmit="validate(event)">
+                <div class="nom">
+                    <label for="nom">Nom: </label></br>
+                    <input type="text" name="nom" id="nom" required placeholder="Entrez votre nom ici">
+                </div>
+
+                <div class="prenom">
+                    <label for="prenom">Prénom: </label></br>
+                    <input type="text" name="prenom" id="prenom" required placeholder="Entrez votre prénom ici">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email: </label></br>
+                    <input type="email" name="email" id="email" value="" required placeholder="Entrez votre email ici">
+                </div>
+
+                <div class="email2">
+                    <label for="email2">Vérification email</label></br>
+                    <input type="email" name="email2" id="email2" value="" required placeholder="Entrez encore votre email">
+                </div>
+
+                <div class="message">
+                    <label for="message">Message: </label></br>
+                    <textarea name="message" id="message" cols="22" rows="10"  placeholder="écrivez votre message ici"></textarea>
+                </div>
+
+                <span id="bienEnvoye">
+                    <h3>message bien envoyé</h3>
+                </span>
+
+                <div class="button">
+                    <button type="submit" >Envoyer le message</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    
+    <script src="confirmation_mdp.js">
+       
+    </script>
+</body>
+</html>
