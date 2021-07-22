@@ -9,7 +9,7 @@
         $email = htmlspecialchars($_POST['email']);
         $message = htmlspecialchars($_POST['message']);
 
-        if(filter_var($nom, FILTER_VALIDATE_EMAIL)){
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
         }
     else{

@@ -8,7 +8,6 @@ function validate(event) {
     event.preventDefault();
     var email = document.getElementById("email").value;
     var email2 = document.getElementById("email2").value;
-    
     var message = document.getElementById("message").value;
     var bienEnvoye = document.getElementById("bienEnvoye").value;
 
@@ -37,7 +36,7 @@ function validate(event) {
         // alert('le message est bien envoyé');
         document.getElementById("bienEnvoye").style.display = "block";
         document.getElementById("bienEnvoye").style.color = "green";
-        setTimeout(function(){ wwindow.location('https://www.jacquieetmicheltv.net/'); }, 3000);
+        // setTimeout(function(){ wwindow.location('https://www.jacquieetmicheltv.net/'); }, 3000);
     }
     return false;
 }   
