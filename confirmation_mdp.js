@@ -16,13 +16,16 @@ function validate(event) {
     } else {
         alert('Adresse e-mail non valide');
         document.getElementById("email").style.border = "2px solid red";
+        return false;
     }
     if (email === email2 ) {
         // alert('Adresses e-mail identiques ');
+        
     } else {
         // email2.setAttribute("style","font-style : italic; border:1px solid red");
         document.getElementById("email2").style.border = "2px solid red";
         alert('Adresses e-mail differentes');
+        return false;
     }
     if (message.length > 0) {
         // alert('le message est ok');
@@ -30,14 +33,27 @@ function validate(event) {
     } else {
         alert('veuillez entrez un message');
         document.getElementById("message").style.border = "2px solid red";
-        
+        return false;
+
     }
     if((email === email2) && message.length > 0){
         // alert('le message est bien envoyé');
         document.getElementById("bienEnvoye").style.display = "block";
         document.getElementById("bienEnvoye").style.color = "green";
+        
         // setTimeout(function(){ wwindow.location('https://www.jacquieetmicheltv.net/'); }, 3000);
     }
-    return false;
+    fetch("index.php", { //Et si il est valide alors du fait une requete ajax
+        method: "POST", // En post
+        body: new FormData(document.querySelector('form')) //Avec le formulaire
+    })
+        .then(result =>
+             result.json())
+        .then(data => {
+            // flashMessage(data.status)
+            console.log(data.status)
+
+        });
 }   
+
 
