@@ -40,8 +40,9 @@ function validate(event) {
         // alert('le message est bien envoyé');
         document.getElementById("bienEnvoye").style.display = "block";
         document.getElementById("bienEnvoye").style.color = "green";
-        
-        // setTimeout(function(){ wwindow.location('https://www.jacquieetmicheltv.net/'); }, 3000);
+        // document.getElementById("bienEnvoye").style.border = "2px solid green";
+        // setTimeout(alert, 2000,"merci c'est bien envoyé");
+        // setTimeout(function(){window.location.href="index.html", 5000} );
     }
     fetch("index.php", { //Et si il est valide alors du fait une requete ajax
         method: "POST", // En post
@@ -54,6 +55,13 @@ function validate(event) {
             console.log(data.status)
 
         });
+        
 }   
 
 
+// let b1 = document.getElementById('bienEnvoye');
+
+// b1.addEventListener('click', message);
+// function message(){
+//     setTimeout(alert, 2000, 'Message d\'alerte après 2 secondes'); 
+// }

@@ -48,6 +48,7 @@ input:valid{
     background:rgb(121, 253, 121);
     opacity:0.4;
     color:black;
+    border: solid 2px black;
 }
 
 
